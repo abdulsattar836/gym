@@ -1,0 +1,6 @@
+@font-face {
+  font-family: "Bebas Condensed Medium Italic";
+  src: url("./assets/fonts/BebasNeue-CondensedMediumItalic.ttf") format("truetype");
+  font-weight: 500; /* Adjust if needed */
+  font-style: italic;
+}
