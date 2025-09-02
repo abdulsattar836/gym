@@ -78,7 +78,7 @@ export const RightActions = () => (
   <div className="hidden md:flex items-center justify-start space-x-4">
     <Link
       to="/signup"
-      className="mt-0.5 ml-6 px-5 py-2.5 bg-[#FF0000]  text-white text-sm text-bold whitespace-nowrap  transition-colors duration-300 tracking-wide"
+      className="mt-0.5 mr-5 px-7 py-2.5 bg-[#FF0000]   text-white text-md text-bold whitespace-nowrap  transition-colors duration-300 tracking-wide"
       style={{
         fontFamily: "Bebas Neue",
         fontWeight: 500,

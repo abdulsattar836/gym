@@ -35,7 +35,7 @@ const HeroSection = () => {
         }`}
       >
         <h1
-          className="text-white text-4xl md:text-7xl leading-relaxed"
+          className="text-white text-4xl md:text-8xl leading-relaxed tracking-wide"
           style={{ fontFamily: "Bebas Neue" }}
         >
           READY TO TRAIN <br />
@@ -46,7 +46,7 @@ const HeroSection = () => {
             fontFamily: "Poppins",
             fontWeight: 300,
           }}
-          className="mt-4"
+          className="mt-4 text-sm"
         >
           Gym training is a structured and disciplined approach to physical
           exercise that
@@ -55,7 +55,7 @@ const HeroSection = () => {
         </p>
 
         <button
-          className="mt-24 border  border-[#FF0000] px-7 py-4 text-md font-bold tracking-wide text-[#FF0000]"
+          className="mt-14 border  border-[#FF0000] px-7 py-4 text-md font-bold tracking-wide text-[#FF0000]"
           style={{
             fontFamily: "Bebas Neue",
             fontWeight: 500,
