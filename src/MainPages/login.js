@@ -25,16 +25,32 @@ const Login = () => {
           // items-center
           // md:items-start
         >
-          <h1 className="text-3xl md:text-4xl font-bold font-roboto text-center md:text-left">
+          <h1
+            className="text-3xl md:text-4xl font-bold text-center md:text-left"
+            style={{
+              fontFamily: "Roboto",
+            }}
+          >
             <span className="text-white">Fitness</span>{" "}
             <span className="text-[#FF0000]">Gym</span>
           </h1>
 
           <div className="text-center md:text-left">
-            <h2 className="text-xl text-white font-bold font-roboto">
+            <h2
+              className="text-xl text-white font-bold "
+              style={{
+                fontFamily: "Poltawski Nowy",
+              }}
+            >
               Sign In
             </h2>
-            <p className="text-white text-sm leading-snug mt-1 mb-7">
+            <p
+              className="text-white text-sm leading-snug mt-1 mb-7"
+              style={{
+                fontFamily: "Rubik",
+                fontWeight: 400,
+              }}
+            >
               Please login to continue to your account.
             </p>
           </div>
@@ -111,7 +127,12 @@ const Login = () => {
             </div>
 
             {/* Keep me logged in + Forgot */}
-            <div className="flex flex-row  items-center justify-between w-[80%] sm:w-[60%]  md:w-[70%] text-sm gap-2">
+            <div
+              className="flex flex-row  items-center justify-between w-[80%] sm:w-[60%]  md:w-[70%] text-xs gap-2"
+              style={{
+                fontFamily: "Rubik",
+              }}
+            >
               <label className="flex items-center gap-2 cursor-pointer select-none">
                 <input type="checkbox" className="peer hidden" />
                 <span
@@ -121,7 +142,12 @@ const Login = () => {
                 ></span>
                 <span className="text-white">Keep me logged in</span>
               </label>
-              <button className="text-white hover:underline">
+              <button
+                className="text-white hover:underline"
+                style={{
+                  fontWeight: 400,
+                }}
+              >
                 Forgot Password?
               </button>
             </div>
@@ -130,7 +156,10 @@ const Login = () => {
             <div className="flex flex-col w-[80%] sm:w-[60%] md:w-[70%] space-y-2">
               <Link
                 to="/"
-                className="w-full px-4 py-2 bg-white text-center text-black rounded-xl font-rubik font-semibold text-sm"
+                className="w-full px-4 py-2 bg-white text-center text-black rounded-xl  font-semibold text-sm"
+                style={{
+                  fontFamily: "Rubik",
+                }}
               >
                 Sign In
               </Link>
@@ -148,11 +177,21 @@ const Login = () => {
               </GoogleButton>
 
               {/* Bottom link */}
-              <div className="w-full flex justify-center mt-6">
-                <p className="text-white text-xs">
+              <div
+                className="w-[35%] flex justify-center mt-6 absolute bottom-4 "
+                style={{
+                  fontFamily: "Rubik",
+                }}
+              >
+                <p
+                  className="text-white text-xs"
+                  style={{
+                    fontWeight: 400,
+                  }}
+                >
                   Need an account?{" "}
                   <Link
-                    className="text-[#FF0000] font-bold underline"
+                    className="text-[#FF0000] font-semibold underline"
                     to="/signup"
                   >
                     Create One

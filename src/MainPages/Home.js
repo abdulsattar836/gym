@@ -1,9 +1,9 @@
-import Navbar from "../pages/Navbar";
+import HeroSection from "../pages/heroSection";
 
 const Home = () => {
   return (
     <div>
-      <Navbar />
+      <HeroSection />
     </div>
   );
 };

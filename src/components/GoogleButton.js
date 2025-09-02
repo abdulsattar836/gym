@@ -16,7 +16,10 @@ const GoogleButton = ({ children }) => {
   return (
     <button
       onClick={handleGoogleSignIn}
-      className="w-full flex items-center justify-center gap-2 px-4 py-2 bg-white text-black rounded-xl font-rubik font-semibold text-sm shadow-md hover:bg-gray-100 transition"
+      className="w-full flex items-center justify-center gap-2 px-4 py-2 bg-white text-black rounded-xl  font-semibold text-sm shadow-md"
+      style={{
+        fontFamily: "Rubik",
+      }}
     >
       {children}
     </button>

@@ -27,8 +27,8 @@ const Navbar = () => {
   }, [isOpen]);
 
   return (
-    <nav className="bg-white sticky top-0 z-50 shadow-sm">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="bg-transparent sticky top-0 z-50 shadow-sm ">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-transparent">
         {/* Navbar Container */}
         <div className="flex items-center justify-between h-16">
           {/* Left Side: Logo */}
@@ -49,13 +49,13 @@ const Navbar = () => {
               to="/signup"
               className="md:hidden px-4 py-2  bg-[#FF0000] font-bebas text-white text-sm font-bold whitespace-nowrap transition-colors duration-300"
             >
-              START NOW
+              STARTED NOW
             </Link>
 
             {/* Mobile Menu Toggle Button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 rounded-md text-gray-700 hover:bg-gray-100 focus:outline-none md:hidden"
+              className="p-2 rounded-md text-gray-200  focus:outline-none md:hidden"
             >
               <svg
                 className={`h-7 w-7 transform transition-transform duration-300 ${
@@ -98,7 +98,7 @@ const Navbar = () => {
       <div
         className={`md:hidden fixed top-16 left-0 w-full bg-white shadow-lg px-4 pb-3 space-y-2 z-50 transform transition-all duration-300 ease-in-out ${
           isOpen
-            ? "translate-y-0 opacity-100"
+            ? "translate-y-0 opacity-100 pointer-events-auto bg-white/30 backdrop-blur-md"
             : "-translate-y-5 opacity-0 pointer-events-none"
         }`}
       >
@@ -132,10 +132,6 @@ const Navbar = () => {
           onClick={() => setIsOpen(false)}
         >
           CONTACT US
-        </Link>
-
-        <Link to="/signup" className="text-gray-700 font-medium mt-2">
-          STARTED NOW
         </Link>
       </div>
     </nav>

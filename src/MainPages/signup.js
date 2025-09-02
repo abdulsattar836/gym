@@ -21,23 +21,40 @@ const SignUP = () => {
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between relative z-10">
         {/* 🔹 Left Content Section */}
         <div
-          className="w-full md:w-1/2 space-y-3 mb-10 md:mt-8 flex flex-col 
+          className="w-full md:w-1/2 space-y-2 mb-10 md:mt-12 md:mb-6 flex flex-col 
           "
           // items-center md:items-start
         >
           {/* 🔹 Logo */}
-          <h1 className="text-3xl md:text-4xl font-bold font-roboto text-center md:text-left">
+          <h1
+            className="text-3xl md:text-4xl font-bold  text-center md:text-left"
+            style={{
+              fontFamily: "Roboto",
+            }}
+          >
             <span className="text-white">Fitness</span>{" "}
             <span className="text-[#FF0000]">Gym</span>
           </h1>
 
           {/* 🔹 Title & Subtitle */}
           <div className="text-center md:text-left">
-            <h2 className="text-xl text-white font-bold font-roboto">
+            <h2
+              className="text-xl text-white font-bold "
+              style={{
+                fontFamily: "Poltawski Nowy",
+              }}
+            >
               Sign Up
             </h2>
-            <p className="text-white text-sm leading-snug mt-1 mb-7">
-              To access your account, kindly complete the registration process.
+            <p
+              className="text-white text-sm leading-snug mt-1 mb-7"
+              style={{
+                fontFamily: "Rubik",
+                fontWeight: "400",
+              }}
+            >
+              To access your account, kindly complete the registration
+              <br /> process.
             </p>
           </div>
 
@@ -117,7 +134,7 @@ const SignUP = () => {
             <div className="relative w-[80%] md:w-[70%]">
               <input
                 type="number"
-                placeholder="Phone Number"
+                placeholder="Phone number"
                 className="w-full px-3 py-2 rounded-xl text-white placeholder-white shadow-sm focus:outline-none text-sm bg-transparent border border-white"
               />
             </div>
@@ -127,7 +144,10 @@ const SignUP = () => {
               {/* Sign Up Button */}
               <Link
                 to="/"
-                className="w-full px-4 py-2 bg-white text-center text-black rounded-xl font-rubik font-semibold text-sm"
+                className="w-full px-4 py-2 bg-white text-center text-black rounded-xl  font-semibold text-sm"
+                style={{
+                  fontFamily: "Rubik",
+                }}
               >
                 Sign Up
               </Link>
@@ -147,11 +167,21 @@ const SignUP = () => {
               </GoogleButton>
 
               {/* Already Have Account */}
-              <div className="w-full flex justify-center mt-6">
-                <p className="text-white text-xs">
+              <div
+                className="w-full flex justify-center mt-6"
+                style={{
+                  fontFamily: "Rubik, sans-serif",
+                }}
+              >
+                <p
+                  className="text-white text-xs "
+                  style={{
+                    fontWeight: "400",
+                  }}
+                >
                   Already have an account?{" "}
                   <Link
-                    className="text-[#FF0000] font-bold underline"
+                    className="text-[#FF0000] font-semibold underline"
                     to="/login"
                   >
                     Sign In
