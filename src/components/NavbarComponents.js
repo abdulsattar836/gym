@@ -30,7 +30,7 @@ export const NavLinks = () => {
         HOME
       </Link>
       <Link
-        to="/services"
+        to="/service"
         className="text-md text-white tracking-wide "
         style={{
           fontFamily: "Bebas Neue",
