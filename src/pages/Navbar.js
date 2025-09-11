@@ -38,7 +38,7 @@ const Navbar = () => {
 
           {/* Center: Navigation Links (Hidden on Mobile) */}
           {showNav && (
-            <div className="hidden md:flex justify-center flex-grow">
+            <div className="hidden md:flex justify-center flex-grow ">
               <NavLinks />
             </div>
           )}

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import hero from "../assests/Hero.jpg";
 import Navbar from "./Navbar";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -54,7 +55,8 @@ const HeroSection = () => {
           focuses, on strength, endurance and overall fitness improvement.
         </p>
 
-        <button
+        <Link
+          to="/signup"
           className="mt-14 border  border-[#FF0000] px-7 py-4 text-md font-bold tracking-wide text-[#FF0000]"
           style={{
             fontFamily: "Bebas Neue",
@@ -62,7 +64,7 @@ const HeroSection = () => {
           }}
         >
           LET'S JOIN NOW
-        </button>
+        </Link>
         {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-24"> */}
         <div className="flex flex-row flex-wrap gap-3 mt-24 text-center">
           {/* First Block */}

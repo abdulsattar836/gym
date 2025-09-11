@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 
 // ==================== Logo Component ====================
 export const Logo = () => (
-  <div className="flex items-center ml-4 md:ml-14 whitespace-nowrap">
+  <div className="flex items-center ml-4 md:ml-12 whitespace-nowrap">
     <h1
-      className="w-32 md:w-24 max-w-full text-white h-auto  text-2xl object-contain italic"
+      className="w-32 max-w-full text-white h-auto  text-2xl object-contain italic"
       style={{
         fontFamily: "Roboto Condensed, sans-serif",
         fontWeight: "500",
@@ -18,7 +18,7 @@ export const Logo = () => (
 // ==================== Desktop Nav Links ====================
 export const NavLinks = () => {
   return (
-    <div className="hidden md:flex md:items-center  md:space-x-6 whitespace-nowrap">
+    <div className="hidden md:flex md:items-center  md:space-x-9 whitespace-nowrap">
       <Link
         to="/"
         className="text-md  text-[#FF0000] tracking-wide "
@@ -78,7 +78,7 @@ export const RightActions = () => (
   <div className="hidden md:flex items-center justify-start space-x-4">
     <Link
       to="/signup"
-      className="mt-0.5 mr-5 px-7 py-2.5 bg-[#FF0000]   text-white text-md text-bold whitespace-nowrap  transition-colors duration-300 tracking-wide"
+      className="mt-0.5 mr-14 px-7 py-2.5 bg-[#FF0000]   text-white text-md text-bold whitespace-nowrap  transition-colors duration-300 tracking-wide"
       style={{
         fontFamily: "Bebas Neue",
         fontWeight: 500,

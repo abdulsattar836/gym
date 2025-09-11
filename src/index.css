@@ -18,3 +18,13 @@ select:-webkit-autofill:focus {
     -webkit-text-fill-color: white !important;
     transition: background-color 5000s ease-in-out 0s !important;
 }
+.testimonial-section .slick-dots li button:before {
+    color: white;
+    /* change dot color */
+}
+
+.testimonial-section .slick-prev:before,
+.testimonial-section .slick-next:before {
+    color: white;
+    /* change arrow color */
+}
