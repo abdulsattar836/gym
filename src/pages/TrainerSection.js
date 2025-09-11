@@ -1,5 +1,6 @@
 import TrainerCard from "../components/TrainersCard";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import img from "../assests/Image.jpg";
 import img2 from "../assests/Image2.jpg";
@@ -7,54 +8,14 @@ import img3 from "../assests/Image3.jpg";
 import img4 from "../assests/Image4.jpg";
 
 const trainers = [
-  {
-    name: "BORNEY EXITIED",
-    role: "Rate Trainer :",
-    img: img,
-    rating: 5,
-  },
-  {
-    name: "ELSA WINDIA",
-    role: "Rate Trainer :",
-    img: img2,
-    rating: 5,
-  },
-  {
-    name: "GEORGE ARYO",
-    role: "Rate Trainer :",
-    img: img3,
-    rating: 5,
-  },
-  {
-    name: "ANGELA MELLISA",
-    role: "Rate Trainer :",
-    img: img4,
-    rating: 5,
-  },
-  {
-    name: "BORNEY EXITIED",
-    role: "Rate Trainer :",
-    img: img,
-    rating: 5,
-  },
-  {
-    name: "ELSA WINDIA",
-    role: "Rate Trainer :",
-    img: img2,
-    rating: 5,
-  },
-  {
-    name: "GEORGE ARYO",
-    role: "Rate Trainer :",
-    img: img3,
-    rating: 5,
-  },
-  {
-    name: "ANGELA MELLISA",
-    role: "Rate Trainer :",
-    img: img4,
-    rating: 5,
-  },
+  { name: "BORNEY EXITIED", role: "Rate Trainer :", img: img, rating: 5 },
+  { name: "ELSA WINDIA", role: "Rate Trainer :", img: img2, rating: 5 },
+  { name: "GEORGE ARYO", role: "Rate Trainer :", img: img3, rating: 5 },
+  { name: "ANGELA MELLISA", role: "Rate Trainer :", img: img4, rating: 5 },
+  { name: "BORNEY EXITIED", role: "Rate Trainer :", img: img, rating: 5 },
+  { name: "ELSA WINDIA", role: "Rate Trainer :", img: img2, rating: 5 },
+  { name: "GEORGE ARYO", role: "Rate Trainer :", img: img3, rating: 5 },
+  { name: "ANGELA MELLISA", role: "Rate Trainer :", img: img4, rating: 5 },
 ];
 
 const TrainersSection = () => {
@@ -89,18 +50,20 @@ const TrainersSection = () => {
         {/* Swiper carousel */}
         <div className="mt-14">
           <Swiper
-            spaceBetween={10} // gap between slides
-            slidesPerView={4} // default
+            modules={[Autoplay]} // add Autoplay module here
+            spaceBetween={10}
+            slidesPerView={4}
             breakpoints={{
               640: { slidesPerView: 1 },
               768: { slidesPerView: 2 },
-              1024: { slidesPerView: 4 }, // desktop shows 4 cards
+              1024: { slidesPerView: 4 },
             }}
             loop={true}
             autoplay={{
-              delay: 3000,
+              delay: 3000, // 3 seconds
               disableOnInteraction: false,
             }}
+            speed={1000} // ✅ smooth transition in ms (1 second)
           >
             {trainers.map((trainer, i) => (
               <SwiperSlide key={i} className="flex justify-center">
