@@ -28,3 +28,9 @@ select:-webkit-autofill:focus {
     color: white;
     /* change arrow color */
 }
+/* Add this CSS in your global stylesheet (e.g., index.css / App.css) */
+.slick-prev:before,
+.slick-next:before {
+    content: '';
+    /* Remove default arrow circle */
+}
